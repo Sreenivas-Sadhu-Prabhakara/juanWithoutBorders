@@ -11,9 +11,9 @@ export default function Hero() {
     >
       {/* Background decoration */}
       <div className="absolute inset-0 -z-10" aria-hidden="true">
-        <div className="absolute top-1/4 -left-20 w-72 h-72 bg-brand-400/20 dark:bg-brand-600/10 rounded-full blur-3xl" />
-        <div className="absolute top-1/3 right-0 w-96 h-96 bg-accent-400/15 dark:bg-accent-600/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-warm-400/15 dark:bg-warm-600/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/4 -left-20 w-72 h-72 bg-primary/20 dark:bg-primary/10 rounded-full blur-3xl" />
+        <div className="absolute top-1/3 right-0 w-96 h-96 bg-secondary/15 dark:bg-secondary/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-tertiary/15 dark:bg-tertiary/10 rounded-full blur-3xl" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(59,130,246,0.1),transparent)] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(59,130,246,0.05),transparent)]" />
       </div>
 
@@ -22,9 +22,9 @@ export default function Hero() {
           {/* Left content */}
           <div className="space-y-8">
             <AnimatedSection animation="fade-up">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-50 dark:bg-brand-950/50 border border-brand-200 dark:border-brand-800">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/50 dark:bg-primary/10 border border-primary/20 dark:border-primary/80">
                 <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" aria-hidden="true" />
-                <span className="text-sm font-medium text-brand-700 dark:text-brand-300">
+                <span className="text-sm font-medium text-primary dark:text-primary">
                   Building Inclusive Workplaces
                 </span>
               </div>
@@ -67,17 +67,17 @@ export default function Hero() {
             <AnimatedSection animation="fade-up" delay={400}>
               <div className="flex items-center gap-8 pt-4">
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-bold text-brand-600 dark:text-brand-400">2,500+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-primary dark:text-primary">2,500+</div>
                   <div className="text-sm text-slate-500 dark:text-slate-400">Jobs Placed</div>
                 </div>
                 <div className="w-px h-12 bg-slate-200 dark:bg-slate-700" aria-hidden="true" />
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-bold text-accent-600 dark:text-accent-400">350+</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-secondary dark:text-secondary">350+</div>
                   <div className="text-sm text-slate-500 dark:text-slate-400">Partner Companies</div>
                 </div>
                 <div className="w-px h-12 bg-slate-200 dark:bg-slate-700" aria-hidden="true" />
                 <div className="text-center">
-                  <div className="text-2xl sm:text-3xl font-bold text-warm-600 dark:text-warm-400">98%</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-tertiary dark:text-tertiary">98%</div>
                   <div className="text-sm text-slate-500 dark:text-slate-400">Satisfaction</div>
                 </div>
               </div>
@@ -88,7 +88,7 @@ export default function Hero() {
           <AnimatedSection animation="scale" delay={200} className="relative">
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <div className="rounded-2xl overflow-hidden shadow-2xl shadow-brand-500/10 dark:shadow-brand-500/5 aspect-[4/5]">
+                <div className="rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 dark:shadow-primary/5 aspect-[4/5]">
                   <img
                     src="https://via.placeholder.com/400x500/4f46e5/ffffff?text=Image+0"
                     alt="A person with a disability working confidently in a modern office environment"

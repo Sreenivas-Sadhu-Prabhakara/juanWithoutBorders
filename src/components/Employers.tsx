@@ -94,13 +94,13 @@ export default function Employers() {
 	return (
 		<section
 			id="employers"
-			className="section-padding bg-gradient-to-br from-slate-900 via-brand-950 to-slate-900 dark:from-slate-950 dark:via-brand-950/50 dark:to-slate-950 text-white relative overflow-hidden"
+			className="section-padding bg-gradient-to-br from-slate-900 via-primary to-slate-900 dark:from-slate-950 dark:via-primary/50 dark:to-slate-950 text-white relative overflow-hidden"
 			aria-labelledby="employers-heading"
 		>
 			{/* Background decorations */}
 			<div className="absolute inset-0 -z-0" aria-hidden="true">
-				<div className="absolute top-0 right-0 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl" />
-				<div className="absolute bottom-0 left-0 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl" />
+				<div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+				<div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
 			</div>
 
 			<div className="container-max relative z-10">
@@ -108,7 +108,7 @@ export default function Employers() {
 					{/* Left content */}
 					<div>
 						<AnimatedSection animation="fade-up">
-							<span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold bg-white/10 text-brand-300 border border-white/10 mb-4">
+							<span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold bg-white/10 text-primary border border-white/10 mb-4">
 								For Employers
 							</span>
 							<h2
@@ -116,7 +116,7 @@ export default function Employers() {
 								className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6"
 							>
 								Hire Inclusively,{' '}
-								<span className="bg-gradient-to-r from-brand-400 via-accent-400 to-warm-400 bg-clip-text text-transparent">
+								<span className="bg-gradient-to-r from-primary via-secondary to-tertiary bg-clip-text text-transparent">
 									Grow Exponentially
 								</span>
 							</h2>
@@ -136,7 +136,7 @@ export default function Employers() {
 									delay={index * 100}
 								>
 									<div className="flex gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300 group">
-										<div className="flex-shrink-0 w-12 h-12 rounded-xl bg-brand-500/20 flex items-center justify-center text-brand-400 group-hover:bg-brand-500/30 transition-colors">
+										<div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center text-primary group-hover:bg-primary/30 transition-colors">
 											{item.icon}
 										</div>
 										<div>

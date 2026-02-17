@@ -38,7 +38,7 @@ function ThemeToggle() {
   return (
     <button
       onClick={cycleTheme}
-      className="relative w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 flex items-center justify-center transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"
+      className="relative w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 flex items-center justify-center transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
       aria-label={`Current: ${label}. Click to change.`}
       title={label}
     >
@@ -55,7 +55,7 @@ function ThemeToggle() {
             strokeLinejoin="round"
             d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
           />
-        </svg>
+       
       )}
       {theme === "dark" && (
         <svg
@@ -132,10 +132,10 @@ export default function Navbar() {
             {/* Logo */}
             <a
               href="#"
-              className="flex items-center gap-3 group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 rounded-lg"
+              className="flex items-center gap-3 group focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded-lg"
               aria-label="Juan Without Borders - Home"
             >
-              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-brand-500 to-accent-500 flex items-center justify-center shadow-lg shadow-brand-500/25 group-hover:shadow-brand-500/40 transition-shadow duration-300">
+              <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center shadow-lg shadow-primary/25 group-hover:shadow-primary/40 transition-shadow duration-300">
                 <svg
                   className="w-6 h-6 text-white"
                   viewBox="0 0 24 24"
@@ -153,7 +153,7 @@ export default function Navbar() {
               <div className="hidden sm:block">
                 <div className="text-lg font-bold text-slate-900 dark:text-white leading-tight">
                   Juan{" "}
-                  <span className="text-brand-600 dark:text-brand-400">
+                  <span className="text-primary-600 dark:text-primary-400">
                     Without Borders
                   </span>
                 </div>
@@ -169,7 +169,7 @@ export default function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-brand-50 dark:hover:bg-brand-950/50 transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"
+                  className="px-3 py-2 rounded-lg text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-950/50 transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
                 >
                   {link.label}
                 </a>
@@ -212,7 +212,7 @@ export default function Navbar() {
               )}
               {/* Mobile menu button */}
               <button
-                className="lg:hidden w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 flex items-center justify-center transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"
+                className="lg:hidden w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 flex items-center justify-center transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
                 onClick={() => setIsMobileOpen(!isMobileOpen)}
                 aria-expanded={isMobileOpen}
                 aria-controls="mobile-menu"
@@ -267,7 +267,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMobileOpen(false)}
-                  className="block px-4 py-3 rounded-xl text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-brand-50 dark:hover:bg-brand-950/50 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"
+                  className="block px-4 py-3 rounded-xl text-lg font-medium text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-primary-950/50 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-500"
                 >
                   {link.label}
                 </a>
@@ -298,7 +298,7 @@ export default function Navbar() {
                       href="/auth/signin"
                       onClick={() => setIsMobileOpen(false)}
                       className="btn-secondary w-full text-center"
-                    >
+                   
                       Sign In
                     </Link>
                     <Link
