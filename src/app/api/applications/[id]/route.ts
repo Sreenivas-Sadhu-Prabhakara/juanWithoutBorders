@@ -8,9 +8,10 @@ const prisma = new PrismaClient()
 // PATCH /api/applications/[id] - Update application status
 export async function PATCH(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const { id } = await params
     const session = await getServerSession(authOptions)
 
     if (!session || (session.user.role !== 'COMPANY' && session.user.role !== 'INSTITUTION')) {
@@ -25,7 +26,7 @@ export async function PATCH(
 
     // Check if the application belongs to a job posted by the current user
     const application = await prisma.application.findUnique({
-      where: { id: params.id },
+      where: { id },
       include: { job: true }
     })
 
@@ -38,7 +39,7 @@ export async function PATCH(
     }
 
     const updatedApplication = await prisma.application.update({
-      where: { id: params.id },
+      where: { id },
       data: { status }
     })
 

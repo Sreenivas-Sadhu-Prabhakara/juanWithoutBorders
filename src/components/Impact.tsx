@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import AnimatedSection from './AnimatedSection';
 
 export default function Impact() {
@@ -11,10 +12,12 @@ export default function Impact() {
           <AnimatedSection animation="slide-left">
             <div className="relative">
               <div className="rounded-3xl overflow-hidden shadow-2xl">
-                <img
+                <Image
                   src="https://via.placeholder.com/600x450/8b5cf6/ffffff?text=Image+4"
                   alt="Team of diverse colleagues working together in an accessible office space"
                   className="w-full h-auto aspect-[4/3] object-cover"
+                  width={600}
+                  height={450}
                   loading="lazy"
                 />
               </div>

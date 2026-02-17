@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import AnimatedSection from './AnimatedSection';
 
 const stories = [
@@ -63,10 +64,12 @@ export default function Stories() {
 							<div className="grid md:grid-cols-5 gap-0">
 								{/* Image side */}
 								<div className="md:col-span-2 relative h-64 md:h-auto">
-									<img
+									<Image
 										src={stories[activeStory].image}
 										alt={`Portrait of ${stories[activeStory].name}, ${stories[activeStory].role}`}
 										className="w-full h-full object-cover"
+										width={400}
+										height={400}
 										loading="lazy"
 									/>
 									<div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent md:bg-gradient-to-r" />
@@ -130,10 +133,12 @@ export default function Stories() {
 														: 'border-slate-200 dark:border-slate-600 opacity-60 hover:opacity-100'
 												}`}
 											>
-												<img
+												<Image
 													src={story.image}
 													alt={story.name}
 													className="w-full h-full object-cover"
+													width={48}
+													height={48}
 												/>
 											</button>
 										))}
