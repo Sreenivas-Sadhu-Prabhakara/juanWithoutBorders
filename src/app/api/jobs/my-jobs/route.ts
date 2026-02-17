@@ -1,9 +1,7 @@
 import { authOptions } from '@/lib/auth'
-import { PrismaClient } from '@prisma/client'
+import { prisma } from '@/lib/prisma'
 import { getServerSession } from 'next-auth'
 import { NextResponse } from 'next/server'
-
-const prisma = new PrismaClient()
 
 // GET /api/jobs/my-jobs - Get jobs posted by the current user
 export async function GET() {

@@ -1,9 +1,7 @@
 import { authOptions } from '@/lib/auth'
-import { PrismaClient } from '@prisma/client'
+import { prisma } from '@/lib/prisma'
 import { getServerSession } from 'next-auth'
 import { NextRequest, NextResponse } from 'next/server'
-
-const prisma = new PrismaClient()
 
 // GET /api/jobs - Get all active jobs
 export async function GET() {
@@ -21,7 +19,7 @@ export async function GET() {
       orderBy: { createdAt: 'desc' }
     })
 
-    const formattedJobs = jobs.map(job => ({
+    const formattedJobs = jobs.map((job: any) => ({
       id: job.id,
       title: job.title,
       description: job.description,
