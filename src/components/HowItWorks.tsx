@@ -98,7 +98,7 @@ export default function HowItWorks() {
 		>
 			<div className="container-max">
 				<AnimatedSection className="text-center mb-16">
-					<span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold bg-accent-50 dark:bg-accent-950/50 text-accent-600 dark:text-accent-400 mb-4">
+					<span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold bg-secondary/50 dark:bg-secondary/10 text-secondary dark:text-secondary mb-4">
 						Simple Process
 					</span>
 					<h2 id="how-heading" className="section-heading mb-4">

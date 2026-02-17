@@ -41,7 +41,7 @@ export default function Stories() {
 		>
 			<div className="container-max">
 				<AnimatedSection className="text-center mb-16">
-					<span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold bg-brand-50 dark:bg-brand-950/50 text-brand-600 dark:text-brand-400 mb-4">
+					<span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold bg-primary/50 dark:bg-primary/10 text-primary dark:text-primary mb-4">
 						Success Stories
 					</span>
 					<h2 id="stories-heading" className="section-heading mb-4">
@@ -124,9 +124,9 @@ export default function Stories() {
 												role="tab"
 												aria-selected={activeStory === index}
 												aria-label={`Story from ${story.name}`}
-												className={`w-12 h-12 rounded-full overflow-hidden border-2 transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 ${
+												className={`w-12 h-12 rounded-full overflow-hidden border-2 transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
 													activeStory === index
-														? 'border-brand-500 scale-110 shadow-lg shadow-brand-500/25'
+														? 'border-primary scale-110 shadow-lg shadow-primary/25'
 														: 'border-slate-200 dark:border-slate-600 opacity-60 hover:opacity-100'
 												}`}
 											>

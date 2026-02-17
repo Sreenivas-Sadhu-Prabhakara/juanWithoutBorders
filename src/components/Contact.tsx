@@ -23,7 +23,7 @@ export default function Contact() {
       <div className="container-max">
         <div className="max-w-4xl mx-auto">
           <AnimatedSection className="text-center mb-12">
-            <span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold bg-brand-50 dark:bg-brand-950/50 text-brand-600 dark:text-brand-400 mb-4">
+            <span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold bg-primary/50 dark:bg-primary/10 text-primary dark:text-primary mb-4">
               Get Started
             </span>
             <h2 id="contact-heading" className="section-heading mb-4">
@@ -69,9 +69,9 @@ export default function Contact() {
                           role="radio"
                           aria-checked={userType === 'jobseeker'}
                           onClick={() => setUserType('jobseeker')}
-                          className={`p-4 rounded-xl border-2 text-center transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 ${
+                          className={`p-4 rounded-xl border-2 text-center transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
                             userType === 'jobseeker'
-                              ? 'border-brand-500 bg-brand-50 dark:bg-brand-950/30 text-brand-700 dark:text-brand-300'
+                              ? 'border-primary bg-primary/50 dark:bg-primary/10 text-primary dark:text-primary'
                               : 'border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:border-slate-300 dark:hover:border-slate-600'
                           }`}
                         >
@@ -85,9 +85,9 @@ export default function Contact() {
                           role="radio"
                           aria-checked={userType === 'employer'}
                           onClick={() => setUserType('employer')}
-                          className={`p-4 rounded-xl border-2 text-center transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 ${
+                          className={`p-4 rounded-xl border-2 text-center transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary ${
                             userType === 'employer'
-                              ? 'border-brand-500 bg-brand-50 dark:bg-brand-950/30 text-brand-700 dark:text-brand-300'
+                              ? 'border-primary bg-primary/50 dark:bg-primary/10 text-primary dark:text-primary'
                               : 'border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-400 hover:border-slate-300 dark:hover:border-slate-600'
                           }`}
                         >
@@ -111,7 +111,7 @@ export default function Contact() {
                         name="firstName"
                         required
                         autoComplete="given-name"
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors"
+                        className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                         placeholder="Your first name"
                       />
                     </div>
@@ -125,7 +125,7 @@ export default function Contact() {
                         name="lastName"
                         required
                         autoComplete="family-name"
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors"
+                        className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                         placeholder="Your last name"
                       />
                     </div>
@@ -141,7 +141,7 @@ export default function Contact() {
                       name="email"
                       required
                       autoComplete="email"
-                      className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                       placeholder="your@email.com"
                     />
                   </div>
@@ -157,7 +157,7 @@ export default function Contact() {
                         name="company"
                         required
                         autoComplete="organization"
-                        className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors"
+                        className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                         placeholder="Your company name"
                       />
                     </div>
@@ -171,7 +171,7 @@ export default function Contact() {
                       id="message"
                       name="message"
                       rows={4}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 transition-colors resize-y"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-white placeholder-slate-400 focus:ring-2 focus:ring-primary focus:border-primary transition-colors resize-y"
                       placeholder={userType === 'jobseeker' ? 'Share your skills, interests, and any accommodation needs...' : 'Tell us about the roles you\'re looking to fill...'}
                     />
                   </div>

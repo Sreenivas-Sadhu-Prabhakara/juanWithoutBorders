@@ -88,7 +88,7 @@ export default function Hero() {
           <AnimatedSection animation="scale" delay={200} className="relative">
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
-                <div className="rounded-2xl overflow-hidden shadow-2xl shadow-primary/10 dark:shadow-primary/5 aspect-[4/5]">
+                <div className="rounded-2xl overflow-hidden shadow-2xl shadow-secondary/10 dark:shadow-secondary/5 aspect-[4/5]">
                   <img
                     src="https://via.placeholder.com/400x500/4f46e5/ffffff?text=Image+0"
                     alt="A person with a disability working confidently in a modern office environment"
@@ -114,7 +114,7 @@ export default function Hero() {
                     loading="eager"
                   />
                 </div>
-                <div className="rounded-2xl overflow-hidden shadow-2xl shadow-accent-500/10 dark:shadow-accent-500/5 aspect-[4/5]">
+                <div className="rounded-2xl overflow-hidden shadow-2xl shadow-secondary/10 dark:shadow-secondary/5 aspect-[4/5]">
                   <img
                     src="https://via.placeholder.com/400x500/f59e0b/ffffff?text=Image+3"
                     alt="Happy employee celebrating career milestone"

@@ -22,11 +22,11 @@ export default function Impact() {
               <div className="absolute -bottom-6 -right-6 bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-6 border border-slate-100 dark:border-slate-700">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-brand-600 dark:text-brand-400">94%</div>
+                    <div className="text-3xl font-bold text-primary dark:text-primary">94%</div>
                     <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">Retention Rate</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-accent-600 dark:text-accent-400">40+</div>
+                    <div className="text-3xl font-bold text-secondary dark:text-secondary">40+</div>
                     <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">Countries</div>
                   </div>
                 </div>
@@ -37,7 +37,7 @@ export default function Impact() {
           {/* Right - Content */}
           <div className="space-y-8">
             <AnimatedSection animation="fade-up">
-              <span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold bg-warm-50 dark:bg-warm-950/50 text-warm-600 dark:text-warm-400 mb-4">
+              <span className="inline-block px-4 py-1.5 rounded-full text-sm font-semibold bg-tertiary/50 dark:bg-tertiary/10 text-tertiary dark:text-tertiary mb-4">
                 Our Impact
               </span>
               <h2 id="impact-heading" className="section-heading mb-4">
@@ -58,7 +58,7 @@ export default function Impact() {
                 { label: 'Community members worldwide', value: '15,000+', icon: '🌍' },
               ].map((stat, index) => (
                 <AnimatedSection key={index} animation="slide-right" delay={index * 100}>
-                  <div className="flex items-center gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700/50 hover:border-brand-200 dark:hover:border-brand-800 transition-colors">
+                  <div className="flex items-center gap-4 p-4 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-100 dark:border-slate-700/50 hover:border-primary dark:hover:border-primary transition-colors">
                     <span className="text-2xl" role="img" aria-hidden="true">{stat.icon}</span>
                     <div className="flex-1">
                       <div className="text-sm text-slate-600 dark:text-slate-400">{stat.label}</div>

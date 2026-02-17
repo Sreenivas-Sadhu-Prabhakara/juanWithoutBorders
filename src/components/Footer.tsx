@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500 to-accent-500 flex items-center justify-center">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
                 <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                 </svg>
@@ -26,7 +26,7 @@ export default function Footer() {
                   key={social}
                   href="#"
                   aria-label={`Follow us on ${social}`}
-                  className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-brand-600 flex items-center justify-center transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"
+                  className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-primary flex items-center justify-center transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 >
                   <span className="text-xs font-bold text-slate-400 hover:text-white">{social[0]}</span>
                 </a>
@@ -40,7 +40,7 @@ export default function Footer() {
             <ul className="space-y-3" role="list">
               {['Browse Opportunities', 'Create Profile', 'Career Resources', 'Skills Training', 'Mentorship Program'].map((item) => (
                 <li key={item}>
-                  <a href="#" className="text-sm hover:text-brand-400 transition-colors focus-visible:outline-2 focus-visible:outline-brand-500 rounded">
+                  <a href="#" className="text-sm hover:text-primary transition-colors focus-visible:outline-2 focus-visible:outline-primary rounded">
                     {item}
                   </a>
                 </li>
@@ -54,7 +54,7 @@ export default function Footer() {
             <ul className="space-y-3" role="list">
               {['Post a Job', 'Talent Search', 'Accommodation Guide', 'Inclusion Training', 'Compliance Resources'].map((item) => (
                 <li key={item}>
-                  <a href="#" className="text-sm hover:text-brand-400 transition-colors focus-visible:outline-2 focus-visible:outline-brand-500 rounded">
+                  <a href="#" className="text-sm hover:text-primary transition-colors focus-visible:outline-2 focus-visible:outline-primary rounded">
                     {item}
                   </a>
                 </li>
@@ -68,7 +68,7 @@ export default function Footer() {
             <ul className="space-y-3" role="list">
               {['About Us', 'Our Mission', 'Blog', 'Contact', 'Accessibility Statement'].map((item) => (
                 <li key={item}>
-                  <a href="#" className="text-sm hover:text-brand-400 transition-colors focus-visible:outline-2 focus-visible:outline-brand-500 rounded">
+                  <a href="#" className="text-sm hover:text-primary transition-colors focus-visible:outline-2 focus-visible:outline-primary rounded">
                     {item}
                   </a>
                 </li>
@@ -83,9 +83,9 @@ export default function Footer() {
             © {currentYear} Juan Without Borders. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
-            <a href="#" className="hover:text-brand-400 transition-colors focus-visible:outline-2 focus-visible:outline-brand-500 rounded">Privacy Policy</a>
-            <a href="#" className="hover:text-brand-400 transition-colors focus-visible:outline-2 focus-visible:outline-brand-500 rounded">Terms of Service</a>
-            <a href="#" className="hover:text-brand-400 transition-colors focus-visible:outline-2 focus-visible:outline-brand-500 rounded">Accessibility</a>
+            <a href="#" className="hover:text-primary transition-colors focus-visible:outline-2 focus-visible:outline-primary rounded">Privacy Policy</a>
+            <a href="#" className="hover:text-primary transition-colors focus-visible:outline-2 focus-visible:outline-primary rounded">Terms of Service</a>
+            <a href="#" className="hover:text-primary transition-colors focus-visible:outline-2 focus-visible:outline-primary rounded">Accessibility</a>
           </div>
         </div>
       </div>
